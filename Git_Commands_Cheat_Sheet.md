@@ -4,17 +4,17 @@
    
 git init // create git repo on local directory
 
-git clone <<remote url>> <<directory name>> // clone an existing repo from the remote to a local dir
+git clone (remote_url) (directory_name) // clone an existing repo from the remote to a local dir
 
-git remote add <<remote name>> <<remote url>> // to add a remote to a local existing  repo folder
+git remote add (remote_name) (remote_url) // to add a remote to a local existing  repo folder
 
-	File Add (Unstaged>>>> Staged)
+	File Add (Unstaged)) Staged)
     
-git add <<file name>> // use . for all
+git add (file name) // use . for all
 
-git reset HEAD <<file name>> // unstage a file
+git reset HEAD (file name) // unstage a file
 
-git rm <<file name>> // remove a file // use --cached to remove file from staged and from remote
+git rm (file name) // remove a file // use --cached to remove file from staged and from remote
 
 cat .gitignore // create git ignore file to ignore specific local file 
 
@@ -34,43 +34,43 @@ git diff // shows you the exact lines added and removed // use --staged for st
 
 	Push & Pull To Remote
 
-git push <<remote name>> <<branch name>> // to push the unmodified file to the remote server
+git push (remote name) (branch name) // to push the unmodified file to the remote server
 
-git pull <<remote name>> <<branch name>> // to pull files from an existing repo to local
+git pull (remote name) (branch name) // to pull files from an existing repo to local
 
 	Branching
 
-git branch <<branch name>> // creating a branch
+git branch (branch name) // creating a branch
 
 git branch // local branch list
 
 git branch --all // local + remote branch list
 
-git checkout <<branch name>> // switch to an existing branch
+git checkout (branch name) // switch to an existing branch
 
 git checkout - // switch to previous branch
 
-git checkout -b <<branch name>> // create and switch to a branch
+git checkout -b (branch name) // create and switch to a branch
 
-git log <<branch name>> // to see the status of a specific branch
+git log (branch name) // to see the status of a specific branch
 
 git log --all // to see the status of all branch
 
 git log --oneline --decorate --graph --all // to see the branch graph
 
-git checkout -d <<branch name>> // locally delete a branch
+git checkout -d (branch name) // locally delete a branch
 
-git push origin --delete <<branch name>> // delete a branch from remote
+git push origin --delete (branch name) // delete a branch from remote
 
-git merge <<branch name>> // merge current branch to another branch
+git merge (branch name) // merge current branch to another branch
 
-git branch --merged <<branch name>> // merged branches with the branch (default current branch)
+git branch --merged (branch name) // merged branches with the branch (default current branch)
 
-git branch --no-merged <<branch name>> // not merged branches with the branch (default current branch)
+git branch --no-merged (branch name) // not merged branches with the branch (default current branch)
 
-git branch --move <<previous branch_name>> <<new_branch_name>> // change local branch name
+git branch --move (previous branch_name) (new_branch_name) // change local branch name
 
-git push --set-upstream <<remote name>> <<branch>> // changed the branch name in the remote too
+git push --set-upstream (remote name) (branch) // changed the branch name in the remote too
 
 
 
