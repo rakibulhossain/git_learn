@@ -58,7 +58,7 @@ git pull (remote name) (branch name) // to pull files from an existing repo to l
 
 git branch (branch name) // creating a branch
 
-git branch // local branch list
+git branch // local branch list // -v or -vv for further information
 
 git branch --all // local + remote branch list
 
@@ -67,6 +67,8 @@ git checkout (branch name) // switch to an existing branch
 git checkout - // switch to previous branch
 
 git checkout -b (branch name) // create and switch to a branch
+
+git checkout -b (new_branch_name) (remote/remote_branch_name) // local branch for remote branch
 
 git log (branch name) // to see the status of a specific branch
 
@@ -87,6 +89,8 @@ git branch --no-merged (branch name) // not merged branches with the branch (def
 git branch --move (previous branch_name) (new_branch_name) // change local branch name
 
 git push --set-upstream (remote name) (branch) // changed the branch name in the remote too
+
+
 
 
 
