@@ -90,7 +90,7 @@ git branch --move (previous branch_name) (new_branch_name) // change local branc
 
 git push --set-upstream (remote name) (branch) // changed the branch name in the remote too
 
-
+git rebase (branch name) // rebasing into a branch from current branch
 
 
 
