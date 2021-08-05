@@ -8,7 +8,19 @@ git clone (remote_url) (directory_name) // clone an existing repo from the remot
 
 git remote add (remote_name) (remote_url) // to add a remote to a local existing  repo folder
 
-	File Add (Unstaged)) Staged)
+	Remote
+
+git remote -v // show list of remote
+
+git remote show (remote name) // more information of a specific remote
+
+git fetch (remote name) // download all data to local
+
+git remote rename (old_nane) (new_name) // rename a remote
+
+git remote remove (remote name) // remove a remote
+
+	File (Unstaged >> Staged)
     
 git add (file name) // use . for all
 
@@ -16,7 +28,11 @@ git reset HEAD (file name) // unstage a file
 
 git rm (file name) // remove a file // use --cached to remove file from staged and from remote
 
+git mv (old_file_name) (new_file_name) // rename a file
+
 cat .gitignore // create git ignore file to ignore specific local file 
+
+git checkout -- (file_name) // unmodifying modified file (means last commit stage)
 
 	Commiting Staged Files
     
@@ -36,7 +52,7 @@ git diff // shows you the exact lines added and removed // use --staged for st
 
 git push (remote name) (branch name) // to push the unmodified file to the remote server
 
-git pull (remote name) (branch name) // to pull files from an existing repo to local
+git pull (remote name) (branch name) // to pull files from an existing repo to local (fetch+merge)
 
 	Branching
 
